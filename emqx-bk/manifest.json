@@ -1,0 +1,54 @@
+{
+  "manifest_version": "2.0.0",
+  "app_uuid": "afb64850-2f67-45cc-b192-dea405a4f5ee",
+  "app_id": "emqx",
+  "display_on_public_website": false,
+  "tile": {
+    "overview": "README.md#Overview",
+    "configuration": "README.md#Setup",
+    "support": "README.md#Support",
+    "changelog": "CHANGELOG.md",
+    "description": "",
+    "title": "EMQX",
+    "media": [],
+    "classifier_tags": [
+      "Supported OS::Linux",
+      "Supported OS::Windows",
+      "Supported OS::macOS",
+      "Category::",
+      "Offering::",
+      "Queried Data Type::",
+      "Submitted Data Type::"
+    ]
+  },
+  "assets": {
+    "integration": {
+      "source_type_name": "EMQX",
+      "configuration": {
+        "spec": "assets/configuration/spec.yaml"
+      },
+      "events": {
+        "creates_events": false
+      },
+      "metrics": {
+        "prefix": "emqx.",
+        "check": "",
+        "metadata_path": "metadata.csv"
+      },
+      "service_checks": {
+        "metadata_path": "assets/service_checks.json"
+      }
+    },
+    "dashboards": {},
+    "monitors": {},
+    "logs": {},
+    "saved_views": {}
+  },
+  "author": {
+    "support_email": "zhongwen.deng@emqx.io",
+    "name": "zhongwencool",
+    "homepage": "",
+    "sales_email": ""
+  },
+  "oauth": {}
+}

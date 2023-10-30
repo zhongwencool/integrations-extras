@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  emqx:
+    image: emqx:5.3.0
+    ports:
+      - "18083:18083"
+    environment:
+      - EMQX_DASHBOARD__DEFAULT_USERNAME="admin"
+      - EMQX_DASHBOARD__DEFAULT_PASSWORD="asdfghjkl@1"
+      - EMQX_NODE__COOKIE="emqx-best-mqtt-broker"

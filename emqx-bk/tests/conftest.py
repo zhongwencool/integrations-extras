@@ -4,8 +4,8 @@ import pytest
 
 from datadog_checks.dev import docker_run, get_docker_hostname, get_here
 
-URL = 'http://{}:8989'.format(get_docker_hostname())
-INSTANCE = {'url': URL, 'api_key': 'asdfghjkl@1'}
+URL = 'http://{}:18083/api/v5/prometheus/stats'.format(get_docker_hostname())
+INSTANCE = {'openmetrics_endpoint': URL}
 
 
 @pytest.fixture(scope='session')
@@ -21,6 +21,6 @@ def dd_environment():
         yield INSTANCE
 
 
-@pytest.fixture
+@pytest.fixture()
 def instance():
     return INSTANCE.copy()

@@ -5,7 +5,7 @@ import pytest
 from datadog_checks.dev import docker_run, get_docker_hostname, get_here
 
 URL = 'http://{}:8989'.format(get_docker_hostname())
-INSTANCE = {'url': URL, 'api_key': 'asdfghjkl@1'}
+INSTANCE = {'url': URL, 'api_key': 'deadbeef'}
 
 
 @pytest.fixture(scope='session')
